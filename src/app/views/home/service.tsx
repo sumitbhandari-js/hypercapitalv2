@@ -3,8 +3,12 @@ import React from "react";
 export const Service = () => {
   return (
     <>
-      <section className="max-w-7xl mx-auto py-24">
-        <h2 className="text-5xl font-bold leading-tight">Our Expertise</h2>
+      <section className="max-w-7xl mx-auto py-24 space-y-10">
+        <div className="serviceHeading">
+          <h1 className="text-5xl font-bold leading-tight relative pb-3 before:bg-brand after:bg-brand text-black">
+            Our Services
+          </h1>
+        </div>
 
         <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 grid-cols-1">
           <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">

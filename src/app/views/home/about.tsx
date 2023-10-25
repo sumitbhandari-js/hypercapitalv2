@@ -8,8 +8,13 @@ export const About = () => {
           <div className="">
             <img src="/about-01.jpg" className="rounded-lg" />
           </div>
-          <div className="space-y-4 py-2">
-            <h2 className="text-5xl font-bold leading-tight">About Us</h2>
+          <div className="space-y-5 py-2">
+            <div className="serviceHeading">
+              <h1 className="text-4xl font-bold leading-tight relative pb-3 before:bg-brand after:bg-brand text-black">
+                About us
+              </h1>
+            </div>
+
             <div className="space-y-3">
               <p className="text-base font-light text-justify">
                 HyperCapital Inc. is a global trade, finance and investment consulting firm that collaborates
