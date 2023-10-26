@@ -14,7 +14,7 @@ const config: Config = {
       },
       colors: {
         body: "#fcfcfc",
-        brand: "#0066f5",
+        brand: "#0266f5",
       },
     },
     // animation: {
