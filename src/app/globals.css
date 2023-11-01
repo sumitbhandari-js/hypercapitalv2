@@ -2,212 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.marqueeText {
+  background: linear-gradient(#0266f5, #0266f5) left no-repeat, #d1d2de;
+  background-size: 0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  -webkit-text-fill-color: transparent;
+  transition: 1s ease-in-out;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.marqueeText:hover {
+  background-size: 100% 100%;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.serviceBox {
-  opacity: 0;
-  transition: all 0.3s ease;
-}
+.marqueeText:before {
+  content: "*";
+  background: transparent;
 
-.serviceBox * {
-  transform: translateY(-70%);
-  transition: all 0.3s ease;
-  opacity: 0;
-}
-
-.serviceHeading h1:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 5px;
-  width: 100px;
-}
-.serviceHeading h1:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  height: 1px;
-  width: 95%;
-  max-width: 255px;
-}
-
-/* Carsouol */
-.carousel-item {
-  transition: transform 1s ease-in-out;
-}
-.carousel-caption {
-  top: 48%;
-  transform: translate(0, -50%);
-  bottom: auto;
-  left: 0;
-  right: 0;
-  width: 0;
-  opacity: 0;
-  overflow: hidden;
-  text-align: left;
-}
-.carousel-item.active .carousel-caption {
-  animation: widthSlide 3.5s 1;
-  opacity: 1;
-  z-index: 999;
-  width: 100%;
-}
-@keyframes widthSlide {
-  0% {
-    width: 0%;
-    opacity: 0;
-  }
-  50% {
-    width: 100%;
-    opacity: 1;
-  }
-  100% {
-    width: 100%;
-    opacity: 1;
-  }
-}
-.carousel-caption h5 {
-  font-size: 5em;
-  text-transform: uppercase;
-  font-weight: 900;
-  -webkit-text-stroke: 2px #e2fadb;
-  color: #00000059;
-  position: relative;
-  width: fit-content;
-  padding-right: 10px;
-}
-.carousel-caption h5:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  bottom: -20px;
-  opacity: 1;
-}
-.carousel-item.active .carousel-caption h5:after {
-  width: 10%;
-  height: 4px;
-  animation: titleCover 2.5s 1;
-  opacity: 0;
-}
-
-@keyframes titleCover {
-  0% {
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-  }
-  20% {
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-  }
-  30% {
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-  }
-  55% {
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 5px;
-    opacity: 1;
-  }
-  95% {
-    left: 0;
-    right: 0;
-    width: 10%;
-  }
-  100% {
-    left: 0;
-    right: 0;
-    width: 10%;
-    opacity: 0.5;
-  }
-}
-.carousel-item > img {
-  height: 100vh;
-  object-fit: cover;
-  transform: scale(1);
-}
-.carousel-item.active > img {
-  transform: scale(4);
-  animation: bgScale 200s 1;
-}
-@keyframes bgScale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(4);
-  }
-}
-.carousel-item:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgb(0 0 0 / 40%);
-  z-index: 99;
-}
-
-.carousel-caption p {
-  font-size: 1.35em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.carousel-caption * {
-  white-space: nowrap;
-}
-.carousel-indicators {
-  right: 10px;
-  left: auto;
-  margin: 0;
-  width: 25px;
-  flex-wrap: wrap;
-  bottom: auto;
-  top: 45%;
-  transform: translate(0, -50%);
-  gap: 10px;
-  z-index: 9999;
-}
-.carousel-indicators [data-bs-target] {
-  width: 15px;
-  height: 15px;
-  border-radius: 100px;
-  border: none;
+  font-size: 85px;
+  line-height: 85px;
+  -webkit-text-stroke: 1px rgba(0, 30, 76, 1);
+  color: transparent;
 }

@@ -16,7 +16,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/
 import Image from "next/image";
 
 const about = [
-  { name: "ABOUT US", href: "#" },
+  { name: "ABOUT US", href: "/about" },
   { name: "OUR TEAM MEMBERS", href: "#" },
 ];
 const services = [
@@ -38,7 +38,7 @@ export function Header() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">HyperCapital</span>
               <Image src="/logo.svg" width={190} height={70} alt="HyperCapital" />
             </a>
@@ -54,7 +54,7 @@ export function Header() {
             </button>
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <a href="#" className="text-xs font-semibold leading-6 text-gray-900">
+            <a href="/" className="text-xs font-semibold leading-6 text-gray-900">
               HOME
             </a>
             <Popover className="relative">

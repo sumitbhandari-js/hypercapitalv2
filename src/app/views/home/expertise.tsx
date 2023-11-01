@@ -7,7 +7,7 @@ export const Expertise = () => {
         <div className="max-w-7xl mx-auto py-24 space-y-8">
           <div className="serviceHeading">
             <h1 className="text-5xl font-bold leading-tight relative pb-3 before:bg-white after:bg-white text-white">
-              Our Services
+              Our Expertise
             </h1>
           </div>
           <p className="text-xl font-light text-justify leading-8">

@@ -10,7 +10,10 @@ export const About = () => {
           </div>
           <div className="space-y-5 py-2">
             <div className="serviceHeading">
-              <h1 className="text-4xl font-bold leading-tight relative pb-3 before:bg-brand after:bg-brand text-black">
+              <h1
+                className="text-4xl font-bold leading-tight relative pb-3 before:bg-brand after:bg-brand text-black wobble"
+                data-animation="fade"
+              >
                 About us
               </h1>
             </div>

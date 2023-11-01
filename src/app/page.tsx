@@ -4,6 +4,7 @@ import { About } from "./views/home/about";
 import { Expertise } from "./views/home/expertise";
 import { Service } from "./views/home/service";
 import { WhychooseUs } from "./views/home/whychooseus";
+import { ServiceMarquee } from "./views/home/serviceMarquee";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Expertise />
       <Service />
+      <ServiceMarquee />
       <WhychooseUs />
     </>
   );
