@@ -79,7 +79,7 @@ export const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-16">
           <div className="space-y-8">
             <Image src="/footer-logo.svg" width={190} height={70} alt="HyperCapital" />
-            <p className="text-sm leading-6 font-light text-gray-300">
+            <p className="text-sm leading-6 font-light text-gray-300 text-justify">
               HyperCapital Inc. is a global trade, finance and investment consulting firm that collaborates
               and partners with private and public sector companies to help and manage their business
               finances, commodity procurement challenges and design tactical strategies to leverage and
@@ -95,7 +95,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="xl:mt-0 lg:mt-0 mt-12 xl:pl-16 lg:pl-16 pl-0">
             <h3 className="text-base font-semibold leading-6 text-white">OUR EXPERTISE</h3>
             <ul role="list" className="mt-6 space-y-4">
               {navigation.solutions.map((item) => (
@@ -108,7 +108,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="md:gap-8 space-y-10">
+          <div className="xl:mt-0 lg:mt-0 mt-12 md:gap-8 space-y-10">
             <div className="">
               <h3 className="text-base font-semibold leading-6 text-white">EMAIL ADDRESS</h3>
               <Link
