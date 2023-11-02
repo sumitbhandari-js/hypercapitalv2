@@ -3,13 +3,9 @@ import React from "react";
 export const InterestsCommodities = () => {
   return (
     <section className="max-w-7xl mx-auto lg:pb-24 xl:pb-24 pb-14 space-y-10 xl:px-6 lg:px-6 px-5">
-      <div className="xl:flex lg:flex flex-1 bg-gray-200">
+      <div className="xl:flex lg:flex flex-1 bg-gray-100">
         <div className="xl:w-1/2 lg:w-1/2 w-full">
-          <img
-            className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
-            alt=""
-          />
+          <img className="h-full w-full object-cover" src="/cards/ser3.png" alt="" />
         </div>
         <div className="xl:w-1/2 lg:w-1/2 w-full">
           <div className="xl:p-16 lg:p-16 p-4">
