@@ -16,12 +16,8 @@
   background-size: 100% 100%;
 }
 
-.marqueeText:before {
-  content: "*";
-  background: transparent;
-
-  font-size: 85px;
-  line-height: 85px;
+span.star:before {
   -webkit-text-stroke: 1px rgba(0, 30, 76, 1);
   color: transparent;
+  background: transparent;
 }
