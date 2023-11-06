@@ -3,16 +3,8 @@
 import { clsx } from "clsx";
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 const about = [
@@ -57,7 +49,7 @@ export function Header() {
             <a href="/" className="text-xs font-semibold leading-6 text-gray-900">
               HOME
             </a>
-            <Popover className="relative">
+            <Popover className="relative z-50">
               <Popover.Button className="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900 outline-none">
                 ABOUT
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
@@ -86,7 +78,7 @@ export function Header() {
               </Transition>
             </Popover>
 
-            <Popover className="relative">
+            <Popover className="relative z-50">
               <Popover.Button className="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900 outline-none">
                 SERVICES
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
@@ -115,7 +107,7 @@ export function Header() {
               </Transition>
             </Popover>
 
-            <a href="#" className="text-xs font-semibold leading-6 text-gray-900">
+            <a href="/about" className="text-xs font-semibold leading-6 text-gray-900">
               CAREERS
             </a>
             <a href="#" className="text-xs font-semibold leading-6 text-gray-900">
@@ -128,7 +120,7 @@ export function Header() {
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-10" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white xl:p-6 lg:p-6 md:p-6 p-4 lg:px-8 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">HyperCapital</span>
