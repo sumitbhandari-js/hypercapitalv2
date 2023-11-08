@@ -182,7 +182,7 @@ export function Header() {
                           />
                         </Disclosure.Button>
                         <Disclosure.Panel className="mt-2 space-y-2">
-                          {about.map((item) => (
+                          {services.map((item) => (
                             <Disclosure.Button
                               key={item.name}
                               as="a"

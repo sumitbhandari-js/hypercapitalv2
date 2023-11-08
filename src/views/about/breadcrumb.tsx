@@ -7,7 +7,7 @@ export const BreadCrumb = () => {
     <>
       {" "}
       <div className="bg-[url('/breadcrumb/about.jpg')] bg-fixed z-10 relative bg-center bg-cover w-full text-white flex justify-center items-center breadcrumb">
-        <div className="max-w-7xl mx-auto xl:py-24 lg:py-24 py-14 xl:space-y-8 lg:space-y-8 xl:px-6 lg:px-6 px-5">
+        <div className="max-w-7xl mx-auto xl:py-32 lg:py-32 py-14 xl:space-y-8 lg:space-y-8 xl:px-6 lg:px-6 px-5">
           <div className="serviceHeading text-white">
             <h1 className="lg:text-5xl xl:text-5xl text-2xl font-bold leading-tight relative pb-3 before:bg-white after:bg-white text-white">
               About Us
