@@ -1,23 +1,21 @@
+"use client";
 import React from "react";
-
+import { AnimatePresence, motion } from "framer-motion";
+import ScrollAnimtion from "@/components/ScrollAnimtion";
 export const About = () => {
   return (
     <>
       <section className="max-w-7xl mx-auto lg:py-24 xl:py-24 py-14 xl:px-6 lg:px-6 px-5">
-        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-14 xl:gap-14 gap-8">
+        <ScrollAnimtion className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-14 xl:gap-14 gap-8">
           <div className="">
             <img src="/about-01.jpg" className="rounded-lg" />
           </div>
           <div className="xl:space-y-5 lg:space-y-5 space-y-3 py-2">
             <div className="serviceHeading">
-              <h1
-                className="lg:text-5xl xl:text-5xl text-2xl font-bold leading-tight relative pb-3 before:bg-brand after:bg-brand text-black wobble"
-                data-animation="fade"
-              >
+              <div className="lg:text-5xl xl:text-5xl text-2xl font-bold leading-tight relative pb-3 before:bg-brand after:bg-brand text-black">
                 About us
-              </h1>
+              </div>
             </div>
-
             <div className="space-y-3">
               <p className="text-base font-light text-justify">
                 HyperCapital Inc. is a global trade, finance and investment consulting firm that collaborates
@@ -39,7 +37,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </ScrollAnimtion>
       </section>
     </>
   );
