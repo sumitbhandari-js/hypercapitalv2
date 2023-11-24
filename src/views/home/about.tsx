@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import ScrollAnimtion from "@/components/ScrollAnimtion";
 export const About = () => {
   return (
     <>
       <section className="max-w-7xl mx-auto lg:py-24 xl:py-24 py-14 xl:px-6 lg:px-6 px-5">
-        <ScrollAnimtion className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-14 xl:gap-14 gap-8">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-14 xl:gap-14 gap-8">
           <div className="">
             <img src="/about-01.jpg" className="rounded-lg" />
           </div>
@@ -37,7 +35,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-        </ScrollAnimtion>
+        </div>
       </section>
     </>
   );
