@@ -78,16 +78,27 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-16">
           <div className="space-y-8">
-            <Image src="/footer-logo.svg" width={190} height={70} alt="HyperCapital" />
+            <Image
+              src="/footer-logo.svg"
+              width={190}
+              height={70}
+              alt="HyperCapital"
+            />
             <p className="text-sm leading-6 font-light text-gray-300 text-justify">
-              HyperCapital Inc. is a global trade, finance and investment consulting firm that collaborates
-              and partners with private and public sector companies to help and manage their business
-              finances, commodity procurement challenges and design tactical strategies to leverage and
-              capture their greatest opportunities to meet their financial and invest goals.
+              HyperCapital Inc. is a global trade, finance and investment
+              consulting firm that collaborates and partners with private and
+              public sector companies to help and manage their business
+              finances, commodity procurement challenges and design tactical
+              strategies to leverage and capture their greatest opportunities to
+              meet their financial and invest goals.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-400">
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-500 hover:text-gray-400"
+                >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -96,11 +107,16 @@ export const Footer = () => {
           </div>
 
           <div className="xl:mt-0 lg:mt-0 mt-12 xl:pl-16 lg:pl-16 pl-0">
-            <h3 className="text-base font-semibold leading-6 text-white">OUR EXPERTISE</h3>
+            <h3 className="text-base font-semibold leading-6 text-white">
+              OUR EXPERTISE
+            </h3>
             <ul role="list" className="mt-6 space-y-4">
               {navigation.solutions.map((item) => (
                 <li key={item.name}>
-                  <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                  <a
+                    href={item.href}
+                    className="text-sm leading-6 text-gray-300 hover:text-white"
+                  >
                     {item.name}
                   </a>
                 </li>
@@ -110,7 +126,9 @@ export const Footer = () => {
 
           <div className="xl:mt-0 lg:mt-0 mt-12 md:gap-8 space-y-10">
             <div className="">
-              <h3 className="text-base font-semibold leading-6 text-white">EMAIL ADDRESS</h3>
+              <h3 className="text-base font-semibold leading-6 text-white">
+                EMAIL ADDRESS
+              </h3>
               <Link
                 href="mail:info@hypercapitalinc.com"
                 className="mt-6 space-y-4 block text-sm leading-6 text-gray-300 hover:text-white"
@@ -120,7 +138,9 @@ export const Footer = () => {
             </div>
 
             <div className="">
-              <h3 className="text-base font-semibold leading-6 text-white">EMAIL ADDRESS</h3>
+              <h3 className="text-base font-semibold leading-6 text-white">
+                EMAIL ADDRESS
+              </h3>
               <div className="mt-6 space-y-3">
                 {" "}
                 <Link
@@ -141,7 +161,12 @@ export const Footer = () => {
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-400">
-            &copy; 2020 HyperCapital, Inc. All rights reserved.
+            &copy; 2020 HyperCapital, Inc. All rights reserved. Powered by
+            <Link href="https://www.oricmeta.com/" target="_blank">
+              {" "}
+              Oricmeta
+            </Link>
+            .
           </p>
         </div>
       </div>
