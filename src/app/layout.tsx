@@ -4,7 +4,7 @@ import { Header } from "./layout/Header";
 import { Footer } from "./layout/Footer";
 
 export const metadata: Metadata = {
-  title: "HyperCapital",
+  title: "HyperCapital is a global trade, finance and investment consulting ",
   description:
     "HyperCapital Inc. is a global trade, finance and investment consulting firm that collaborates and partners with private and public sector companies to help and manage their business finances, commodity procurement challenges and design tactical strategies to leverage and capture their greatest opportunities to meet their financial and invest goals.",
 };
