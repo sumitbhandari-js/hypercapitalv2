@@ -143,7 +143,7 @@ export const Footer = () => {
               </h3>
               <div className="mt-6 space-y-3">
                 {" "}
-                <Link
+                {/* <Link
                   href="mail:info@hypercapitalinc.com"
                   className="space-y-4 block text-sm leading-6 text-gray-300 hover:text-white"
                 >
@@ -154,7 +154,7 @@ export const Footer = () => {
                   className="space-y-4 block text-sm leading-6 text-gray-300 hover:text-white"
                 >
                   234 567 890 1234
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
